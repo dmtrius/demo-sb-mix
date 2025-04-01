@@ -1,6 +1,6 @@
 package com.example.demo.apps;
 
-import lombok.Getter;
+import lombok.Data;
 
 public class App1 {
     void main() throws InterruptedException {
@@ -23,13 +23,9 @@ public class App1 {
         System.out.println(counter2);
     }
 }
-@Getter
+@Data
 class Counter {
     private Integer counter = 0;
-
-    public void setCounter(Integer counter) {
-        this.counter = counter;
-    }
 }
 
 class T1 extends Thread {
