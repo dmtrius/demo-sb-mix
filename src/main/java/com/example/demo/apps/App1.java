@@ -14,6 +14,12 @@ public class App1 {
         System.out.println(counter.getCounter());
 
         Integer counter2 = 0;
+//        ScopedValue<Integer> value = ScopedValue.newInstance();
+//        ScopedValue.where(value, counter2)
+//                .run(() -> {
+//                    counter2 += 1000;
+//                });
+
         Thread t3 = new T2(counter2);
         Thread t4 = new T2(counter2);
         t3.start();
