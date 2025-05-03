@@ -45,7 +45,7 @@ public class BatchHttpClient2 {
         futures.add(future);
       }
 
-      // Wait for this batch to complete Vladyslav Pozniak
+      // Wait for this batch to complete
       CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
     }
 
